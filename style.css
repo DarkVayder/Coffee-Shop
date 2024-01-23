@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+:root {
+    --bg-color: #080808;
+    text-color: white;
+    main-color: snow;
+}
+html{
+    font-size: 62%;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-color);
+}
