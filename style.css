@@ -43,7 +43,7 @@ body{
     color: var(--text-color);
     font-weight: 800;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in;
 }
 
 .logo :hover{
@@ -59,7 +59,7 @@ span{
     color: white;
     margin-left: 4rem;
     font-weight: 500;
-    transition: 03s ease;
+    transition: 03s ease-in;
     border-bottom: 3px solid var(--main-color);
 }
 
@@ -117,10 +117,74 @@ section{
     letter-spacing: 0.2rem;
     font-weight: 600;
     transition: 0,3 ease-in-out;
+    border-radius: 30%;
 }
 
 .btn:hover{
     transform: scale(1.05);
     background: var(--bg-color);
     color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(images/1.jpg);
+    min-height: 100vh;
+}
+
+.heading{
+    font-size: 8rem;
+    text-align: center;
+}
+.about-content{
+    text-align: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0,0,0,0.6);
+    border: 1px solid rgba(24,24,24, 0.3);
+    border-radius: 2rem;
+    padding: 5rem;
+}
+
+.about-content h2{
+    text-align: center;
+    line-height: 1.5;
+}
+
+.about-content h3{
+    font-size: 2.6rem;
+}
+
+.about-content p{
+    font-size: 2rem;
+    margin: 2rem 0 3rem;
+    max-width: 800px;
+}
+
+.coffee{
+    background-color: var(--bg-color);
+}
+
+.coffee-container{
+    display: grid;
+    grid-template-columns: repeat(3,1 fr);
+    align-items: center;
+    margin-top: 10rem;
+    gap: 3rem;
+}
+
+.coffee-container .coffee-box{
+    position: relative;
+    border-radius: 2rem;
+    height: 450px;
+    border: 2px solid var(--main-color);
+    overflow: hidden;
+    display: flex;
+}
+.coffee-box img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease;
 }
