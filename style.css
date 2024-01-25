@@ -220,9 +220,34 @@ section{
     font-weight: 800;
 }
 
-.coffee-info p{
+.coffee-info {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 100vh;
+}
+
+.coffee-info p {
     font-size: 1.6rem;
     margin: 0.3rem 0 1rem;
     font-weight: 600;
     color: white;
+    text-align: center;
+}
+
+.coffee-info a{
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: black;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+}
+
+.coffee-info a i{
+    font-size: 3rem;
+    color: var(--main-color);
 }
