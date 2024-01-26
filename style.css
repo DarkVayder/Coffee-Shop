@@ -446,9 +446,50 @@ section{
 @media(max-width:895px){
     menu-icon{
         display: block;
+    }
  
- .navbar{
-    position: absolute;
-    top: 100%;
- }   }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: rgba(0,0,0, 0.91);
+        display: none;
+   }
+   .navbar.active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    .home-content{
+        text-align: right;
+    }
+    .home-content h3{
+        font-size: 5rem;
+        color: var(--text-color);
+    }
+    .home-content h1{
+        font-size: 8rem;
+        color: var(--main-color);
+    }
+    .about-content{
+        margin: 1rem 4rem;
+    }
+    .coffee h2{
+        margin-bottom: 3rem;
+    }
+    .reviews h2{
+        margin-bottom: 3rem;
+    }
+    .coffee-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .reviews-container{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
+
+
