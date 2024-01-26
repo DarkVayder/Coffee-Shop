@@ -9,3 +9,7 @@ window.onscroll = () => {
         let offset = sec.offsetTop - 150;
     })
 }
+
+document.getElementById('menu-icon').addEventListener('click', function () {
+        document.querySelector('.navbar').classList.toggle('active');
+});

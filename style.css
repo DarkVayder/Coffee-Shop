@@ -59,8 +59,8 @@ span{
     color: white;
     margin-left: 4rem;
     font-weight: 500;
-    transition: 03s ease-in;
-    border-bottom: 3px solid var(--main-color);
+    transition: 0.3s ease-in;
+    border-bottom: 3px solid transparent;
 }
 
 .navbar a:hover,
@@ -446,24 +446,31 @@ section{
 }
 
 @media (max-width: 895px) {
-    .menu-icon {
+    #menu-icon {
         display: block;
+        font-size: 2.5rem;
+        cursor: pointer;
     } 
     .navbar{
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
+        padding: 2rem;
         padding: rgba(0,0,0, 0.91);
         display: none;
+        flex-direction: column;
+        align-items: flex-end;
    }
    .navbar.active{
-        display: block;
+        display: flex;
     }
     .navbar a{
         display: block;
         font-size: 2rem;
-        margin: 3rem 0;
+        margin: 1rem 0;
+        color: white;
+        transition: 0.3s ease;
     }
     .home-content{
         text-align: right;
@@ -477,7 +484,7 @@ section{
         color: var(--main-color);
     }
     .about-content{
-        margin: 1rem 4rem;
+        margin: 1rem 2rem;
     }
     .coffee h2{
         margin-bottom: 3rem;
@@ -487,9 +494,11 @@ section{
     }
     .coffee-container{
         grid-template-columns: repeat(1,1fr);
+        gap: 2rem;
     }
     .reviews-container{
         grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
     }
 }
 
