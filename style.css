@@ -107,7 +107,7 @@ section{
     margin: 3rem 0;
 }
 
-.btn{
+.btn {
     display: inline-block;
     padding: 1rem 2.8rem;
     background: var(--main-color);
@@ -116,8 +116,8 @@ section{
     border: 2px solid transparent;
     letter-spacing: 0.2rem;
     font-weight: 600;
-    transition: 0,3 ease-in-out;
-    border-radius: 30%;
+    transition: 0.3s ease-in-out; 
+    border-radius: 20px; 
 }
 
 .btn:hover{
@@ -327,7 +327,7 @@ section{
 }
 
 .contact form{
-    max-width: 70rem;
+    max-width: 75rem;
     margin: 1rem auto;
     text-align: center;
     margin-bottom: 3rem;
@@ -360,7 +360,7 @@ section{
     bottom: 0;
     width: 100%;
     padding: 40px 0;
-    background-color: var(--main-color);
+    background-color: var(--bg-color);
 }
 
 .footer .social{
@@ -404,7 +404,7 @@ section{
 }
 
 .footer ul li a:hover{
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid var(--main-color);
 }
 
 .footer ul li{
