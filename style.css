@@ -259,22 +259,22 @@ section{
     background: var(--main-color);
 }
 
-.reviews h2{
+.reviews h2 {
     margin-bottom: 10rem;
 }
 
-.reviews-container{
+.reviews-container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin-top: 8rem;
     gap: 2rem;
 }
 
-.reviews-container .reviews-box{
+.reviews-container .reviews-box {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     height: 500px;
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
@@ -284,25 +284,25 @@ section{
     transition: 0.4s ease;
 }
 
-.reviews-container .reviews-box:hover{
+.reviews-container .reviews-box:hover {
     border-color: var(--bg-color);
     transform: scale(1.02);
     background-color: white;
     color: black;
 }
 
-.reviews-box i{
+.reviews-box i {
     font-size: 7rem;
     color: var(--main-color);
 }
 
-.reviews-box h3{
+.reviews-box h3 {
     font-size: 2.6rem;
 }
 
-.reviews-box p{
+.reviews-box p {
     font-size: 1.6rem;
-    margin: 15px;
+    margin: 15px 0;
 }
 
 ::-webkit-scrollbar{
